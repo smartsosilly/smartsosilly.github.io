@@ -1,50 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hello World">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>smartsosilly</title>
-    <link rel="stylesheet" type="text/css" href="mysiteStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Kanit:wght@500&family=Sometype+Mono&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="box">
-        <div class="topBox">
-        <img class='profileImage' src="https://avatars.githubusercontent.com/u/81957853">
-        <div class='texts'>
-            <h1 class="textHead">Krittameth Nakprasert</h1>
-            <p class='normalText'>smartsosilly</p>
-        </div>
-        </div>
-        <div class="info">
-            <p>I'm just an average middle school student who enjoys programming and creating projects that I'm interests in</p>
-            <p class="mail">📨 | npskrittameth2102@gmail.com</p>
-        </div>
-        <div class="socialinfos">
-            <div class="socials">
-                <a href="https://facebook.com/smartsosilly" style="width: 24px;height: 24px;">      
-                    <title>Facebook</title>
-                    <div class="logo facebook">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" style="width: 24px; height: 24px;">
-                    </div>
-                </a>
-                <a href="https://instagram.com/smartsosilly" style="width: 24px;height: 24px;">      
-                    <title>Instagram</title>
-                    <div class="instagram">
-                        <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-png-full-colour-glyph.png" style="width: 24px; height: 24px;">
-                    </div>
-                </a>
-                <a href="https://open.spotify.com/user/313cd7bm5m6cqxem3wg2w5nmhkam?si=a190c35c03054f9f" style="width: 24px;height: 24px;">      
-                    <title>Spotify</title>
-                    <div class="spotify">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Spotify_App_Logo.svg" style="width: 24px; height: 24px; border-radius: 50%;">
-                    </div>
-                </a>
+    <meta
+      name="description"
+      content="Krittameth Nakprasert is just an average high school student who enjoys programming and creating interesting projects."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-mono">
+    <main>
+      <section><div class="bg-image"></div></section>
+      <section class="flex justify-center items-center min-h-screen">
+        <div id="grass" class="p-5 rounded-xl max-w-lg m-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div class="overflow-hidden rounded-full h-24 w-24 mx-auto sm:mx-0">
+              <img
+                src="https://avatars.githubusercontent.com/u/81957853"
+                alt="smartsosilly - Profile Image"
+              />
             </div>
+            <div class="flex justify-center items-center">
+              <div>
+                <h1
+                  class="flex text-2xl font-bold leading-tight text-center text-zinc-300"
+                >
+                  Krittameth Nakprasert
+                </h1>
+                <p class="text-base text-gray-500 text-center sm:text-left">
+                  smartsosilly
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-sm text-gray-400 text-center sm:text-left">
+              I'm just an average high school student who enjoy programming and
+              creating projects that I find interesting.
+            </p>
+            <p class="text-sm text-gray-400 text-center sm:text-left mt-2">
+              📨 | npskrittameth2102@gmail.com
+            </p>
+          </div>
+          <div class="mt-4">
+            <div class="flex flex-wrap gap-3 justify-center sm:justify-start">
+              <a
+                href="https://www.facebook.com/smartsosilly"
+                target="_blank"
+              >
+                <title>facebook</title>
+                <div class="w-6 h-6 hover:scale-125 transition-transform">
+                  <img src="Pics/facebook.svg" alt="facebook" />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/smartsosilly/"
+                target="_blank"
+                class="flex items-center"
+              >
+                <title>instagram</title>
+                <div class="h-6 w-6 hover:scale-125 transition-transform">
+                  <img src="Pics/instagram.svg" alt="instagram" />
+                </div>
+              </a>
+              <a href="https://github.com/smartsosilly" target="_blank">
+                <title>github</title>
+                <div class="h-6 w-6 hover:scale-125 transition-transform">
+                  <img src="Pics/github.svg" alt="github" />
+                </div>
+              </a>
+              <a
+                href="https://open.spotify.com/user/313cd7bm5m6cqxem3wg2w5nmhkam?si=a190c35c03054f9f"
+                target="_blank"
+                class="flex items-center"
+              >
+                <title>spotify</title>
+                <div class="hover:scale-125 transition-transform">
+                  <img src="Pics/spotify.svg" alt="spotify" />
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCmHi8cluemr0W80cqo0LxRA"
+                target="_blank"
+              >
+                <title>youtube</title>
+                <div class="h-6 w-6 hover:scale-125 transition-transform">
+                  <img src="Pics/youtube.svg" alt="youtube" />
+                </div>
+              </a>
+              <a
+                href="https://steamcommunity.com/profiles/76561199176923404/"
+                target="_blank"
+              >
+                <title>steam</title>
+                <div class="h-6 w-6 hover:scale-125 transition-transform">
+                  <img src="Pics/steam.svg" alt="steam" />
+                </div>
+              </a>
+              <a href="npskrittameth2102@gmail.com" target="_blank">
+                <title>gmail</title>
+                <div class="w-6 h-6 hover:scale-125 transition-transform">
+                  <img src="Pics/gmail.svg" alt="gmail" />
+                </div>
+              </a>
+              <div class="flex gap-1">
+                <div class="hover:scale-125 transition-transform">
+                  <img src="Pics/discord.svg" alt="discord" />
+                </div>
+                <div class="flex items-center">
+                  <span class="text-sm font-medium text-indigo-100"
+                    >smartsosilly</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
