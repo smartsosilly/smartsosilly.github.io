@@ -1,151 +1,65 @@
-html, body{
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Sometype Mono', monospace;
-}
-
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background:  url(https://cdnb.artstation.com/p/assets/images/images/046/719/501/original/xio-kim-img-8991.gif?1645792740) center center/cover no-repeat local;
-}
-.box
-{
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url(https://cdnb.artstation.com/p/assets/images/images/046/719/501/original/xio-kim-img-8991.gif?1645792740) no-repeat center/cover;
+  }
+  
+  /* #grass {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  } */
+  
+  #grass {
     position: relative;
-    width: 512px;
-    height: 260px;
-    background: repeating-conic-gradient(from var(--a),#ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
-    animation: animate 4s linear infinite;
-    border-radius: 20px;
-}
-
-@property --a
-{
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-@keyframes animate
-{
-    0%
-    {
-        --a: 0deg
-    }
-    100%
-    {
-        --a: 360deg
-    }
-}
-.box::before
-{
-    content: '';
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  #grass:before,
+  #grass:after {
+    content: "";
     position: absolute;
-    width: 516px;
-    height: 214px;
-    background: repeating-conic-gradient(from var(--a),#45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 40%, #45f3ff 50%);
-    animation: animate 4s linear infinite;
-    animation-delay: -1s;
-    border-radius: 20px;
-}
-.box::after
-{
-    content: '';
-    position: absolute;
-    inset: 6px;
-    background: linear-gradient(0deg, #000000 0%, #212121 100%);
-    border-radius: 15px;
-    border: 3px solid #25252b;
-}
-
-.topBox
-{
-    width: 472px;
-    height: 96px;
-    padding-left: 20px;
-    position: relative;
-    padding-top: 20px;
-    z-index: 10000;
-}
-
-.profileImage
-{
-    border-radius: 50%;
-    width: 96px;
-    height: 90px;
-}
-
-.textHead
-{
-    color: rgba(245, 245, 245, 0.897);
-    padding-left: 110px;
-    font-size: 20px;
-    margin-top: -70px;
-}
-
-.normalText
-{
-    color: rgba(186, 202, 224, 0.459);
-    padding-left: 110px;
-    font-size: 15px;
-    position: relative;
-    z-index: 10000;
-}
-
-.info
-{
-    height: 68px;
-    width: 472px;
-    color: rgba(197, 207, 221, 0.692);
-    padding-top: 35px;
-    padding-left: 20px;
-    font-size: 14px;
-    position: relative;
-    z-index: 10000;
-}
-
-.mail
-{
-    padding-top: 8px;
-}
-
-.socialInfo
-{
-    height: 24px;
-    width: 472px;
-}
-
-.socials
-{
-    height: 24px;
-    width: 472px;
-    position: relative;
-    z-index: 10000;
-}
-
-.instagram
-{
-    padding-left: 55px;
-}
-
-.spotify
-{
-    margin-left: 90px;
-    margin-top: -28px;
-}
-
-.facebook
-{
-    padding-top: 50px;
-    padding-left: 20px;;
-    height: 24px;
-    width: 24px;
-}
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border-radius: 12px;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  #grass:after {
+    filter: blur(8px);
+  }
